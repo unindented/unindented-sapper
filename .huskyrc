@@ -1,0 +1,6 @@
+{
+  "hooks": {
+    "pre-commit": "pretty-quick --pattern '**/*.*(html|js|json|md|svelte)' --staged",
+    "pre-push": "yarn test"
+  }
+}

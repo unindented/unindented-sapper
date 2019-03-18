@@ -1,0 +1,7 @@
+__sapper__/
+coverage/
+dist/
+node_modules/
+projects/contents/static/
+projects/website/static/about/
+projects/website/static/blog/

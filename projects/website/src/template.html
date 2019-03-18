@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    %sapper.base%
+
+    <!-- -->
+
+    %sapper.head%
+
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+        font-size: 100%;
+        line-height: 1.5;
+        margin: 0;
+      }
+    </style>
+
+    %sapper.styles%
+
+    <link rel="manifest" href="manifest.webmanifest" />
+  </head>
+  <body>
+    <div id="root">
+      %sapper.html%
+    </div>
+
+    %sapper.scripts%
+  </body>
+</html>

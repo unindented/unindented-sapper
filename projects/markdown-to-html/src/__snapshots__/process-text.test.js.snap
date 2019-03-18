@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`text leaves mentions alone 1`] = `Array []`;
+
+exports[`text leaves urls alone 1`] = `Array []`;
+
+exports[`text warns about apostrophes in elided contractions 1`] = `
+Array [
+  [2:24-2:28: Expected the apostrophe in \`50’s\` to be like this: \`’50s\`],
+]
+`;
+
+exports[`text warns about indefinite articles 1`] = `
+Array [
+  [2:10-2:11: Use \`an\` before \`uncomfortable\`, not \`a\`],
+]
+`;
+
+exports[`text warns about insensitive, inconsiderate language 1`] = `
+Array [
+  [2:17-2:20: \`his\` may be insensitive, when referring to a person, use \`their\`, \`theirs\`, \`them\` instead],
+  [2:21-2:30: \`brother’s\` may be insensitive, use \`siblings\` instead],
+  [2:5-2:7: \`he\` may be insensitive, use \`they\`, \`it\` instead],
+]
+`;
+
+exports[`text warns about passive voice 1`] = `
+Array [
+  [2:7-2:10: Don’t use the passive voice],
+]
+`;
+
+exports[`text warns about profane and vulgar wording 1`] = `
+Array [
+  [2:44-2:52: Don’t use “bullshit”, it’s profane],
+]
+`;
+
+exports[`text warns about quotes 1`] = `
+Array [
+  [2:25-2:26: Expected a smart quote: \`“\`, not \`"\`],
+  [2:40-2:41: Expected a smart quote: \`”\`, not \`"\`],
+]
+`;
+
+exports[`text warns about redundant acronyms 1`] = `
+Array [
+  [2:28-2:39: Replace \`ATM machine\` with \`ATM\`],
+]
+`;
+
+exports[`text warns about repeated words 1`] = `
+Array [
+  [2:24-2:29: Expected \`to\` once, not twice],
+]
+`;
+
+exports[`text warns about spacing between sentences 1`] = `
+Array [
+  [2:32-2:34: Expected \`1\` space between sentences, not \`2\`],
+]
+`;
+
+exports[`text warns about use of diacritics 1`] = `
+Array [
+  [2:1-2:6: Replace \`Decor\` with \`Décor\`],
+]
+`;

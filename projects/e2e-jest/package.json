@@ -1,0 +1,8 @@
+{
+  "name": "@unindented/e2e-jest",
+  "description": "Testing utilities",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.js"
+}

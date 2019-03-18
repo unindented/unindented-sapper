@@ -1,0 +1,8 @@
+{
+  "overrides": [
+    {
+      "files": "*.svelte",
+      "options": { "parser": "html" }
+    }
+  ]
+}

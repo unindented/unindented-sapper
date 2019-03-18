@@ -1,0 +1,11 @@
+{
+  "name": "@unindented/remark-mermaid",
+  "description": "Process `mermaid` code blocks and turns them into SVG diagrams",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.js",
+  "bin": {
+    "mermaid": "bin/mermaid"
+  }
+}

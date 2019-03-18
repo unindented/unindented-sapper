@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`remark-mermaid with an invalid mermaid block replaces it with an empty block 1`] = `"&#x3C;div class=\\"mermaid\\">&#x3C;/div>"`;

@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/unindented
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://unindented.org
+  * I am unindented (https://keybase.io/unindented) on keybase.
+  * I have a public key ASCF2cfDFXCL4QfRgt0Saca_8ZA8O0c4t21Ce_DmUvjngAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010189d2fec1012b6b92a049461471810add0f1470788624c8c9bf1ffcd5709f7f130a",
+      "host": "keybase.io",
+      "kid": "012085d9c7c315708be107d182dd1269c6bff1903c3b4738b76d427bf0e652f8e7800a",
+      "uid": "2df2311d751a7639e657c134b1af4b00",
+      "username": "unindented"
+    },
+    "merkle_root": {
+      "ctime": 1554150530,
+      "hash": "6a445f2caee9feffdcd8467886521d690bbd4ad6105b8040934babe7ac7d6148367581098dca36e053f00cb5bd6058256cbf9a191c5778a88c339432d6ac0e8f",
+      "hash_meta": "5e05aaddb21b48abbe3354121d831d74b6014614244dae4a3280997adb0f86c8",
+      "seqno": 5074548
+    },
+    "service": {
+      "entropy": "MaFSKfAZfnbjTA9PWo0bFhua",
+      "hostname": "unindented.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.1.2"
+  },
+  "ctime": 1554150534,
+  "expire_in": 504576000,
+  "prev": "d84973b5b9efe4863f471a9619fb6fbd1dc95d12055becfa068ba1d24b9c7bda",
+  "seqno": 69,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEghdnHwxVwi+EH0YLdEmnGv/GQPDtHOLdtQnvw5lL454AKp3BheWxvYWTESpcCRcQg2Elztbnv5IY/RxqWGftvvR3JXRIFW+z6Bouh0kuce9rEIN1NgDqlIpf75ve96Ci8SqD6GbNZRa1iVNPdf5z5p2jZAgHCo3NpZ8RALmgHogLO+sKSpupjdaDdm0zJu4ZTMMN6Q7SmHIpSbXnUai1IXOC8UNaLaES5qTEF2TnlHVYEt0WFtZ8trB7PCqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGuRZJOTZP5SRNKmnp4FbgTuYfRT7/YKfPaj2pNTAPQoo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/unindented
+
+==================================================================

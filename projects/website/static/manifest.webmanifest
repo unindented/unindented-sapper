@@ -1,0 +1,16 @@
+{
+  "name": "Unindented",
+  "short_name": "Unindented",
+  "description": "Home of Daniel Perez Alvarez",
+  "start_url": "/?homescreen=true",
+  "display": "minimal-ui",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

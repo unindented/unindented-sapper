@@ -1,0 +1,11 @@
+{
+  "name": "@unindented/contents",
+  "description": "Website contents",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.js",
+  "bin": {
+    "assets": "bin/assets"
+  }
+}

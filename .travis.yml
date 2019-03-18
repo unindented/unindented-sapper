@@ -1,0 +1,29 @@
+language: node_js
+node_js:
+  - "10"
+
+dist: xenial
+sudo: false
+
+services:
+  - xvfb
+
+addons:
+  apt:
+    packages:
+      - brotli
+      - parallel
+      - webp
+
+cache:
+  yarn: true
+
+before_install:
+  # Enable user namespace cloning
+  - sysctl kernel.unprivileged_userns_clone=1
+  # Upgrade yarn to 1.15.2
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.15.2
+  - export PATH="$HOME/.yarn/bin:$PATH"
+
+before_script:
+  - yarn export

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`json-to-rehype with invalid json returns a fallback rehype tree 1`] = `"<div class=\\"root\\"></div>"`;
+
+exports[`json-to-rehype with valid json returns a rehype tree from a json string 1`] = `
+"<div class=\\"rehype\\"><h1>Header 1</h1>
+<h2>Header 2</h2>
+<p>The quick brown fox jumped over the lazy
+dog's back.</p>
+<h3>Header 3</h3>
+<blockquote>
+<p>This is a blockquote.</p>
+<p>This is the second paragraph in the blockquote.</p>
+</blockquote></div>"
+`;

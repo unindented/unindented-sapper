@@ -1,0 +1,9 @@
+export const siteTitle = process.env.SITE_TITLE;
+export const siteDescription = process.env.SITE_DESCRIPTION;
+export const siteUrl = process.env.SITE_URL;
+export const themeColor = process.env.THEME_COLOR;
+export const backgroundColor = process.env.BACKGROUND_COLOR;
+export const authorName = process.env.AUTHOR_NAME;
+export const authorEmail = process.env.AUTHOR_EMAIL;
+export const authorGitHub = process.env.AUTHOR_GITHUB;
+export const authorTwitter = process.env.AUTHOR_TWITTER;

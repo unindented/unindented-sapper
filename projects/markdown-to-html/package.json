@@ -1,0 +1,13 @@
+{
+  "name": "@unindented/markdown-to-html",
+  "description": "Convert Markdown content to HTML",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.js",
+  "dependencies": {
+    "@unindented/rehype-to-json": "*",
+    "@unindented/remark-mermaid": "*",
+    "@unindented/remark-smartypants": "*"
+  }
+}

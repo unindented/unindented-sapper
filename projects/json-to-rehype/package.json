@@ -1,0 +1,8 @@
+{
+  "name": "@unindented/json-to-rehype",
+  "description": "Deserialize a `rehype` tree from a JSON string",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.js"
+}

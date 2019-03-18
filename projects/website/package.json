@@ -1,0 +1,37 @@
+{
+  "name": "@unindented/website",
+  "productName": "Unindented",
+  "description": "Home of Daniel Perez Alvarez",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://unindented.org",
+  "themeColor": "#000000",
+  "backgroundColor": "#ffffff",
+  "author": {
+    "name": "Daniel Perez Alvarez",
+    "email": "daniel@unindented.org",
+    "url": "https://unindented.org",
+    "github": "unindented",
+    "twitter": "unindented"
+  },
+  "scripts": {
+    "static:pre:assets": "assets static/",
+    "static:pre:jpg2webp": "find static/ -name '*.jpg' | parallel cwebp -quiet -q 75 -o {.}.webp {}",
+    "static:pre:png2webp": "find static/ -name '*.png' | parallel cwebp -quiet -lossless -q 100 -o {.}.webp {}",
+    "static:post:brotli": "find __sapper__/export/ -name '*.css' -o -name '*.html' -o -name '*.js' -o -name '*.json' -o -name '*.svg' | parallel brotli -f -o {}.br {}",
+    "static:post:gzip": "find __sapper__/export/ -name '*.css' -o -name '*.html' -o -name '*.js' -o -name '*.json' -o -name '*.svg' | parallel gzip -f -k {}",
+    "prestart": "run-s static:pre:*",
+    "start": "sapper dev",
+    "preexport": "run-s static:pre:*",
+    "export": "sapper export --legacy",
+    "postexport": "run-s static:post:*",
+    "deploy:rsync": "rsync --archive --delete __sapper__/export/",
+    "deploy:dev": "run-s export \"deploy:rsync unindented:/home/unindented/sapper.unindented.org/\"",
+    "deploy:prod": "run-s export \"deploy:rsync unindented:/home/unindented/unindented.org/\""
+  },
+  "dependencies": {
+    "@unindented/contents": "*",
+    "@unindented/markdown-to-html": "*"
+  }
+}

@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rehype-to-json returns json from a rehype tree 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [
+        Object {
+          "type": "text",
+          "value": "Header 1",
+        },
+      ],
+      "properties": Object {},
+      "tagName": "h1",
+      "type": "element",
+    },
+    Object {
+      "type": "text",
+      "value": "
+",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "type": "text",
+          "value": "Header 2",
+        },
+      ],
+      "properties": Object {},
+      "tagName": "h2",
+      "type": "element",
+    },
+    Object {
+      "type": "text",
+      "value": "
+",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "type": "text",
+          "value": "The quick brown fox jumped over the lazy
+dog's back.",
+        },
+      ],
+      "properties": Object {},
+      "tagName": "p",
+      "type": "element",
+    },
+    Object {
+      "type": "text",
+      "value": "
+",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "type": "text",
+          "value": "Header 3",
+        },
+      ],
+      "properties": Object {},
+      "tagName": "h3",
+      "type": "element",
+    },
+    Object {
+      "type": "text",
+      "value": "
+",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "type": "text",
+          "value": "
+",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "type": "text",
+              "value": "This is a blockquote.",
+            },
+          ],
+          "properties": Object {},
+          "tagName": "p",
+          "type": "element",
+        },
+        Object {
+          "type": "text",
+          "value": "
+",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "type": "text",
+              "value": "This is the second paragraph in the blockquote.",
+            },
+          ],
+          "properties": Object {},
+          "tagName": "p",
+          "type": "element",
+        },
+        Object {
+          "type": "text",
+          "value": "
+",
+        },
+      ],
+      "properties": Object {},
+      "tagName": "blockquote",
+      "type": "element",
+    },
+    Object {
+      "type": "text",
+      "value": "
+",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "type": "text",
+          "value": "This is an SVG:",
+        },
+      ],
+      "properties": Object {},
+      "tagName": "p",
+      "type": "element",
+    },
+    Object {
+      "type": "text",
+      "value": "
+",
+    },
+    Object {
+      "type": "raw",
+      "value": "<svg xmlns=\\"http://www.w3.org/2000/svg\\">
+  <rect x=\\"10\\" y=\\"10\\" height=\\"100\\" width=\\"100\\"></rect>
+</svg>",
+    },
+    Object {
+      "type": "text",
+      "value": "
+",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "type": "text",
+          "value": "This is a math block:",
+        },
+      ],
+      "properties": Object {},
+      "tagName": "p",
+      "type": "element",
+    },
+    Object {
+      "type": "text",
+      "value": "
+",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [],
+          "properties": Object {
+            "crossorigin": "anonymous",
+            "href": "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.1/katex.min.css",
+            "integrity": "sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ",
+            "rel": "stylesheet",
+          },
+          "tagName": "link",
+          "type": "element",
+        },
+        Object {
+          "type": "text",
+          "value": "
+  ",
+        },
+        Object {
+          "type": "raw",
+          "value": "<math>
+    <semantics>
+      <mrow><mi mathvariant=\\"normal\\">∞</mi></mrow>
+      <annotation encoding=\\"application/x-tex\\">{\\\\infty}</annotation>
+    </semantics>
+  </math>",
+        },
+        Object {
+          "type": "text",
+          "value": "
+",
+        },
+      ],
+      "properties": Object {
+        "class": "math katex",
+      },
+      "tagName": "div",
+      "type": "element",
+    },
+    Object {
+      "type": "text",
+      "value": "
+",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "type": "text",
+          "value": "This is some inline math: ",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "type": "text",
+              "value": "
+",
+            },
+            Object {
+              "type": "raw",
+              "value": "<math>
+<semantics>
+<mrow><mi mathvariant=\\"normal\\">∞</mi></mrow>
+<annotation encoding=\\"application/x-tex\\">{\\\\infty}</annotation>
+</semantics>
+</math>",
+            },
+            Object {
+              "type": "text",
+              "value": "
+",
+            },
+          ],
+          "properties": Object {
+            "class": "inlineMath katex",
+          },
+          "tagName": "span",
+          "type": "element",
+        },
+      ],
+      "properties": Object {},
+      "tagName": "p",
+      "type": "element",
+    },
+  ],
+  "properties": Object {
+    "class": "rehype",
+  },
+  "tagName": "div",
+  "type": "element",
+}
+`;

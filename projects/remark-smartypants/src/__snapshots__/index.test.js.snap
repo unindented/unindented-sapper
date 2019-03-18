@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`remark-smartypants converts quotes to smart quotes 1`] = `"<p>John said, “I saw Lucy at lunch, she told me ‘Mary wants you to get some ice cream on your way home’. I think I will get some at Ben and Jerry’s, on Gloucester Road.”</p>"`;
+
+exports[`remark-smartypants converts three dashes to an em-dash 1`] = `
+"<blockquote>
+<p>Proper words in proper places make the true definition of a style.</p>
+<p>— Jonathan Swift</p>
+</blockquote>"
+`;
+
+exports[`remark-smartypants converts two dashes to an en-dash 1`] = `"<p>Community-associated Methicillin-Resistant <em>Staphylococcus aureus</em> in Outpatients, United States, 1999–2006</p>"`;

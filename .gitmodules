@@ -1,0 +1,3 @@
+[submodule "projects/contents/static"]
+  path = projects/contents/static
+  url = https://github.com/unindented/unindented-contents.git

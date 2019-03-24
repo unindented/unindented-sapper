@@ -1,5 +1,6 @@
 import contents from "@unindented/contents";
 import markdown2html from "@unindented/markdown-to-html";
+import { generateFeed } from "../utils/feed";
 
 export const serveItem = slug => async (_req, res) => {
   const lookup = await contents();
@@ -29,4 +30,17 @@ export const serveItem = slug => async (_req, res) => {
       body
     })
   );
+};
+
+export const serveFeed = (type, mime) => async (_req, res) => {
+  const lookup = await contents();
+
+  res.writeHead(200, {
+    "Content-Type": mime
+  });
+
+  const items = lookup.home.related;
+  const result = generateFeed(type, items);
+
+  return res.end(result);
 };

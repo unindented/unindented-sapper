@@ -7,7 +7,7 @@ const pageRegex = /^(.+)\/index\.md$/;
 
 const dateSorter = ({ date: dateA }, { date: dateB }) =>
   dateA > dateB ? -1 : dateA < dateB ? 1 : 0;
-const relatedMap = ({ slug, title }) => ({ slug, title });
+const relatedMap = ({ slug, title, date }) => ({ slug, title, date });
 const typeFilter = type => file => file.type === type;
 const blogFilter = typeFilter("blog-item");
 

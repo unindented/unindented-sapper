@@ -1,5 +1,6 @@
 <script>
   import { authorName } from "../utils/metadata";
+  import LayoutFeeds from "./LayoutFeeds.svelte";
 </script>
 
 <footer role="contentinfo">
@@ -11,4 +12,6 @@
       >Some rights reserved</a
     >.
   </p>
+
+  <LayoutFeeds />
 </footer>

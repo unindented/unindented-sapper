@@ -1,20 +1,25 @@
 <script>
-  import { siteTitle } from "../utils/metadata";
-
-  export let status;
   export let error;
 
   const dev = process.env.NODE_ENV === "development";
 </script>
 
-<svelte:head>
-  <title>{status} - {siteTitle}</title>
-</svelte:head>
+<div class="grid-full error">
+  <p class="grid-main error-message">{error.message}</p>
+  {#if dev && error.stack}
+  <div class="grid-full error-stack">
+    <pre class="grid-main">{error.stack}</pre>
+  </div>
+  {/if}
+</div>
 
-<h1>{status}</h1>
+<style>
+  .error {
+    margin: var(--space-xl) 0;
+  }
 
-<p>{error.message}</p>
-
-{#if dev && error.stack}
-<pre>{error.stack}</pre>
-{/if}
+  .error-stack {
+    background-color: var(--color-subtle-background);
+    overflow-x: auto;
+  }
+</style>

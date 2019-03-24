@@ -3,3 +3,10 @@
 </script>
 
 <mark {...properties}><slot></slot></mark>
+
+<style>
+  mark {
+    background-color: var(--color-accent-background);
+    color: var(--color-accent-foreground);
+  }
+</style>

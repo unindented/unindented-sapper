@@ -1,4 +1,4 @@
-<ul>
+<ul class="sr-only">
   <li>
     <a href="feed.atom">Atom Feed</a>
   </li>

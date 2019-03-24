@@ -7,9 +7,20 @@
 </script>
 
 <script>
-  import MainIndex from "../../components/MainIndex.svelte";
+  import MainArticle from "../../components/MainArticle.svelte";
+  import MainArticleHeader from "../../components/MainArticleHeader.svelte";
+  import MainArticleList from "../../components/MainArticleList.svelte";
+  import Rehype from "../../components/rehype/Rehype.svelte";
+  import { siteTitle } from "../../utils/metadata";
 
   export let data;
+  $: title = `${data.title} - ${siteTitle}`;
 </script>
 
-<MainIndex {data} />
+<MainArticle slug="{data.slug}" {title}>
+  <MainArticleHeader>
+    {data.title}
+  </MainArticleHeader>
+  <Rehype node="{data.body}" />
+  <MainArticleList items="{data.related}" />
+</MainArticle>

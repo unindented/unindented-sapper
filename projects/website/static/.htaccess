@@ -88,7 +88,7 @@
 #
 # https://httpd.apache.org/docs/current/mod/core.html#errordocument
 
-ErrorDocument 404 /404.html
+ErrorDocument 404 /404/index.html
 
 # ----------------------------------------------------------------------
 # | Error prevention                                                   |

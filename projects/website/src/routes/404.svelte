@@ -2,7 +2,7 @@
   import { requestItem } from "./_client";
 
   export async function preload() {
-    return requestItem(this, "home");
+    return requestItem(this, "404");
   }
 </script>
 
@@ -11,15 +11,15 @@
   import MainArticleHeader from "../components/MainArticleHeader.svelte";
   import MainArticleList from "../components/MainArticleList.svelte";
   import Rehype from "../components/rehype/Rehype.svelte";
-  import { siteDescription, siteTitle } from "../utils/metadata";
+  import { siteTitle } from "../utils/metadata";
 
   export let data;
-  const title = `${siteTitle} - ${siteDescription}`;
+  $: title = `${data.title} - ${siteTitle}`;
 </script>
 
 <MainArticle slug="{data.slug}" {title}>
   <MainArticleHeader>
-    Hi, I’m Daniel
+    {data.title}
   </MainArticleHeader>
   <Rehype node="{data.body}" />
   <MainArticleList items="{data.related}" />

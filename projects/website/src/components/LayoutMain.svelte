@@ -1,1 +1,3 @@
-<main id="main"><slot></slot></main>
+<main id="main">
+  <slot></slot>
+</main>

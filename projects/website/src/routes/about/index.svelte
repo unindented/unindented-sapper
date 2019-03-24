@@ -8,8 +8,17 @@
 
 <script>
   import MainArticle from "../../components/MainArticle.svelte";
+  import MainArticleHeader from "../../components/MainArticleHeader.svelte";
+  import Rehype from "../../components/rehype/Rehype.svelte";
+  import { siteTitle } from "../../utils/metadata";
 
   export let data;
+  $: title = `${data.title} - ${siteTitle}`;
 </script>
 
-<MainArticle {data} />
+<MainArticle slug="{data.slug}" {title}>
+  <MainArticleHeader>
+    {data.title}
+  </MainArticleHeader>
+  <Rehype node="{data.body}" />
+</MainArticle>

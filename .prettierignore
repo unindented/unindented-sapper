@@ -2,6 +2,7 @@ __sapper__/
 coverage/
 dist/
 node_modules/
-projects/contents/static/
+projects/contents/static/**/*.html
+projects/contents/static/**/*.md
 projects/website/static/about/
 projects/website/static/blog/

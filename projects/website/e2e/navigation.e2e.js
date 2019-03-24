@@ -24,14 +24,14 @@ describe("navigation", () => {
 
     it("displays the right title", async () => {
       const title = await page.title();
-      expect(title).toBe("Unindented");
+      expect(title).toBe("Unindented - Home of Daniel Perez Alvarez");
     });
 
     it("displays the right heading", async () => {
       const selector = "main h1";
       await page.waitFor(selector);
       const heading = await page.$eval(selector, el => el.textContent);
-      expect(heading).toBe("Latest articles");
+      expect(heading).toBe("Hi, I’m Daniel");
     });
   });
 

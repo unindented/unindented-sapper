@@ -4,6 +4,7 @@ const stringify = require("rehype-stringify");
 const unified = require("unified");
 
 const transforms = [
+  // KaTeX elements need a stylesheet to render properly.
   [
     node =>
       node.type === "element" &&
@@ -36,12 +37,14 @@ const transforms = [
       convertToRaw(node);
     }
   ],
+  // Properties need to be converted to attributes, so that rendering the HTML is straightforward.
   [
     node => node.properties,
     node => {
       convertToAttributes(node);
     }
   ],
+  // Position information can be dropped, it's not needed when rendering the HTML.
   [
     undefined,
     node => {

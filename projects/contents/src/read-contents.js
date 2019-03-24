@@ -55,6 +55,19 @@ const types = {
       const date = undefined;
       return { slug, date };
     }
+  },
+  "error-404": {
+    glob: ["404.md"],
+    attributes: () => {
+      const slug = "404";
+      const date = undefined;
+      return { slug, date };
+    },
+    related: allFiles => {
+      const relatedFiles = allFiles.filter(blogFilter);
+      relatedFiles.sort(dateSorter);
+      return relatedFiles.slice(0, 10).map(relatedMap);
+    }
   }
 };
 

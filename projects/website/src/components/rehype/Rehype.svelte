@@ -134,3 +134,43 @@
 -->{:else}<!--
 --><RehypeError {...node} /><!--
 -->{/if}
+
+<style>
+  :global(.rehype) {
+    display: inherit;
+    grid-column: full;
+    grid-template-columns: inherit;
+    margin: var(--space-xl) 0;
+  }
+
+  :global(.rehype > *) {
+    grid-column: main;
+    margin: var(--space-s) 0;
+  }
+
+  :global(.rehype) > :first-child {
+    margin-top: 0;
+  }
+
+  :global(.math),
+  :global(.mermaid) {
+    background-color: var(--color-subtle-background);
+    display: inherit;
+    grid-column: full !important;
+    grid-template-columns: inherit;
+    overflow-x: auto;
+  }
+
+  :global(.math > *),
+  :global(.mermaid > *) {
+    grid-column: main;
+  }
+
+  :global(.mermaid > svg) {
+    font-family: inherit !important;
+    height: auto;
+    margin: var(--space-m) 0;
+    max-width: 100% !important;
+    width: 100%;
+  }
+</style>

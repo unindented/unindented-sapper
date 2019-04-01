@@ -17,18 +17,23 @@
 
 <style>
   footer {
-    background-color: var(--color-inverted-background);
-    color: var(--color-inverted-foreground);
+    background-color: var(--color-accent-background-1);
+    background-image: linear-gradient(
+      135deg,
+      var(--color-blue-90) 0%,
+      var(--color-purple-80) 100%
+    );
+    color: var(--color-accent-foreground);
     text-align: center;
   }
 
   a {
-    color: var(--color-inverted-link);
+    color: var(--color-accent-link);
     transition: color 0.1s ease-in-out;
   }
 
   a:focus,
   a:hover {
-    color: var(--color-inverted-link-hover);
+    color: var(--color-accent-link-hover);
   }
 </style>

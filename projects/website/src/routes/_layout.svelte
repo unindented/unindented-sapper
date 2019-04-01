@@ -232,22 +232,20 @@
     --color-background: var(--color-white);
     --color-foreground: var(--color-black);
 
-    --color-inverted-background: var(--color-black);
-    --color-inverted-foreground: var(--color-white);
-
-    --color-accent-background: var(--color-blue-90);
+    --color-accent-background-1: var(--color-blue-90);
+    --color-accent-background-2: var(--color-purple-80);
     --color-accent-foreground: var(--color-white);
 
     --color-subtle-background: var(--color-gray-10);
     --color-subtle-foreground: var(--color-black);
 
-    --color-border: var(--color-gray-60);
-
     --color-link: var(--color-blue-80);
     --color-link-hover: var(--color-blue-60);
 
-    --color-inverted-link: var(--color-white);
-    --color-inverted-link-hover: var(--color-blue-20);
+    --color-accent-link: var(--color-white);
+    --color-accent-link-hover: var(--color-blue-20);
+
+    --color-border: var(--color-gray-60);
 
     --color-code-comment: var(--color-gray-60);
     --color-code-meta: var(--color-gray-60);
@@ -547,7 +545,7 @@
      ========================================================================== */
 
   :global(html) {
-    background-color: var(--color-inverted-background);
+    background-color: var(--color-black);
   }
 
   :global(body) {

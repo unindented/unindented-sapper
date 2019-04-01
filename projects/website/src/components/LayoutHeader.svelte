@@ -39,9 +39,13 @@
 
 <style>
   header {
-    background-color: var(--color-inverted-background);
-    color: var(--color-inverted-foreground);
+    color: var(--color-accent-foreground);
     min-height: 20vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
   }
 
   div {
@@ -72,7 +76,7 @@
   }
 
   a {
-    color: var(--color-inverted-link);
+    color: var(--color-accent-link);
     display: inline-block;
     font-weight: bold;
     margin: var(--space-m) 0 var(--space-s);

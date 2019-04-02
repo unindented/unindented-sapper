@@ -78,6 +78,7 @@
     --space-m: 1rem;
     --space-l: 1.5rem;
     --space-xl: 2rem;
+    --space-xxl: 4rem;
 
     --border-radius: 0.25rem;
 

@@ -495,7 +495,7 @@ AddDefaultCharset utf-8
         form-action 'self'; \
         frame-ancestors 'none'; \
         frame-src https://www.youtube.com; \
-        img-src 'self' data:; \
+        img-src 'self' data: https://stats.unindented.org; \
         manifest-src 'self'; \
         media-src 'self'; \
         script-src 'self' 'unsafe-eval' 'unsafe-inline' data:; \

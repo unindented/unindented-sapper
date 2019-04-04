@@ -11,13 +11,11 @@
   import MainArticleHeader from "../components/MainArticleHeader.svelte";
   import MainArticleList from "../components/MainArticleList.svelte";
   import Rehype from "../components/rehype/Rehype.svelte";
-  import { siteDescription, siteTitle } from "../utils/metadata";
 
   export let data;
-  const title = `${siteTitle} - ${siteDescription}`;
 </script>
 
-<MainArticle slug="{data.slug}" {title}>
+<MainArticle slug="{data.slug}" title="">
   <MainArticleHeader>
     Hi, I’m Daniel
   </MainArticleHeader>

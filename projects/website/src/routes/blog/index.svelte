@@ -14,10 +14,9 @@
   import { siteTitle } from "../../utils/metadata";
 
   export let data;
-  $: title = `${data.title} - ${siteTitle}`;
 </script>
 
-<MainArticle slug="{data.slug}" {title}>
+<MainArticle slug="{data.slug}" title="{data.title}">
   <MainArticleHeader>
     {data.title}
   </MainArticleHeader>

@@ -1,12 +1,18 @@
 <script>
+  import IntersectionObserver from "../IntersectionObserver.svelte";
+
   export let properties;
 </script>
 
-<div>
-  <iframe {...properties}>
-    <p><em>Your browser does not support iframes.</em></p>
-  </iframe>
-</div>
+<IntersectionObserver top="{100}" bottom="{25}" once let:intersecting>
+  {#if intersecting}
+  <div>
+    <iframe {...properties}>
+      <p><em>Your browser does not support iframes.</em></p>
+    </iframe>
+  </div>
+  {/if}
+</IntersectionObserver>
 
 <style>
   div {

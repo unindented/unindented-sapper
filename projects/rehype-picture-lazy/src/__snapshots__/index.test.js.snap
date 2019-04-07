@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`remark-picture-lazy leaves image alone if not configured 1`] = `
+"<p>Here's an image:</p>
+<img src=\\"foo.png\\" alt=\\"Some image\\" width=\\"640\\" height=\\"480\\">"
+`;
+
+exports[`remark-picture-lazy wraps image in picture if configured 1`] = `
+"<p>Here's another image:</p>
+<picture><source srcset=\\"foo.webp\\" type=\\"image/webp\\" data-width=\\"640\\" data-height=\\"480\\" data-placeholder=\\"data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNjQwIDQ4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=\\"><img src=\\"foo.png\\" alt=\\"Some image\\" width=\\"640\\" height=\\"480\\"></picture>"
+`;

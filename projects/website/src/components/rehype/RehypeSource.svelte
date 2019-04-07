@@ -6,4 +6,8 @@
   $: srcset = fix(properties.srcset);
 </script>
 
-<source {...properties} srcset="{srcset}" />
+<source
+  {...properties}
+  data-srcset="{srcset}"
+  srcset="{properties['data-placeholder']}"
+/>

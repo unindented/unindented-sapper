@@ -1,5 +1,7 @@
 <script>
+  import lazyPicture from "../actions/lazyPicture";
+
   export let properties;
 </script>
 
-<picture {...properties}><slot></slot></picture>
+<picture use:lazyPicture {...properties}><slot></slot></picture>

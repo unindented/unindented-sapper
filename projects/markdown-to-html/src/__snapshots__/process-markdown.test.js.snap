@@ -6,7 +6,7 @@ exports[`markdown adds fragment links to headings 1`] = `
 <h3 id=\\"third-level-header\\">Third-Level Header<a class=\\"hash\\" href=\\"#third-level-header\\">#</a></h3>"
 `;
 
-exports[`markdown adds webp alternative to png images 1`] = `"<picture><source srcset=\\"logo.webp\\" type=\\"image/webp\\"><img src=\\"logo.png\\" alt=\\"Logo\\"></picture>"`;
+exports[`markdown adds webp alternative to png images 1`] = `"<picture><source srcset=\\"logo.webp\\" type=\\"image/webp\\" data-placeholder=\\"data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgdW5kZWZpbmVkIHVuZGVmaW5lZCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=\\"><img src=\\"logo.png\\" alt=\\"Logo\\"></picture>"`;
 
 exports[`markdown converts quotes to smart quotes 1`] = `"<p>John said, “I saw Lucy at lunch, she told me ‘Mary wants you to get some ice cream on your way home’. I think I will get some at Ben and Jerry’s, on Gloucester Road.”</p>"`;
 

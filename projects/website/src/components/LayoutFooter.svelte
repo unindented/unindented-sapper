@@ -18,11 +18,11 @@
 <style>
   footer {
     background-color: var(--color-accent-background-1);
-    background-image: url("data:image/svg+xml,%3Csvg width='640' height='25' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M640 5V0H0v5c58.272 0 101.728 20 160 20 58.272 0 101.728-20 160-20 58.272 0 101.728 20 160 20 58.272 0 101.728-20 160-20z' fill='%23fff'/%3E%3C/svg%3E"),
+    background-image: var(--image-background-footer),
       linear-gradient(
         135deg,
-        var(--color-blue-90) 0%,
-        var(--color-purple-80) 100%
+        var(--color-accent-background-1) 0%,
+        var(--color-accent-background-2) 100%
       );
     background-position: left 10vw top 0, center;
     background-repeat: repeat-x, no-repeat;

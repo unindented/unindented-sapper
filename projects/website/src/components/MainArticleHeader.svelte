@@ -17,11 +17,11 @@
 <style>
   header {
     background-color: var(--color-accent-background-1);
-    background-image: url("data:image/svg+xml,%3Csvg width='640' height='25' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M640 20v5H0v-5C58.272 20 101.728 0 160 0c58.272 0 101.728 20 160 20 58.272 0 101.728-20 160-20 58.272 0 101.728 20 160 20z' fill='%23fff'/%3E%3C/svg%3E"),
+    background-image: var(--image-background-header),
       linear-gradient(
         135deg,
-        var(--color-blue-90) 0%,
-        var(--color-purple-80) 100%
+        var(--color-accent-background-1) 0%,
+        var(--color-accent-background-2) 100%
       );
     background-position: left -10vw bottom 0, center;
     background-repeat: repeat-x, no-repeat;

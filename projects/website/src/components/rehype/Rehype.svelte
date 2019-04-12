@@ -161,6 +161,11 @@
     overflow-x: auto;
   }
 
+  :global(.mermaid) {
+    /* Diagrams are not easy to style, so we won't respect the theme */
+    background-color: var(--color-gray-10);
+  }
+
   :global(.math > *),
   :global(.mermaid > *) {
     grid-column: main;
@@ -172,5 +177,9 @@
     margin: var(--space-m) 0;
     max-width: 100% !important;
     width: 100%;
+  }
+
+  :global(.mermaid > svg text) {
+    font-family: inherit !important;
   }
 </style>

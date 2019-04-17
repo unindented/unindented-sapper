@@ -16,6 +16,8 @@
     "twitter": "unindented"
   },
   "scripts": {
+    "clean:sapper": "shx rm -rf __sapper__",
+    "clean": "run-p clean:*",
     "static:pre:assets": "assets static/",
     "static:pre:jpg2webp": "find static/ -name '*.jpg' | parallel cwebp -quiet -q 75 -o {.}.webp {}",
     "static:pre:png2webp": "find static/ -name '*.png' | parallel cwebp -quiet -lossless -q 100 -o {.}.webp {}",
